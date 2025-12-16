@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Ayam Geprek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Ayam Geprek</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu" class="menu">
+        <h2>Menu Kami</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="geprek1.jpg" alt="Ayam Geprek Original">
+                <h3>Ayam Geprek Original</h3>
+                <p>Ayam goreng renyah dengan sambal original.</p>
+                <span class="price">Rp 15.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="geprek2.jpg" alt="Ayam Geprek Pedas">
+                <h3>Ayam Geprek Pedas</h3>
+                <p>Ayam geprek dengan sambal pedas level 5.</p>
+                <span class="price">Rp 17.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="geprek3.jpg" alt="Ayam Geprek Komplit">
+                <h3>Ayam Geprek Komplit</h3>
+                <p>Ayam geprek dengan nasi, lalapan, dan sambal.</p>
+                <span class="price">Rp 20.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="geprek4.jpg" alt="Ayam Geprek Komplit">
+                <h3>Ayam Geprek Spesial</h3>
+                <p>Ayam geprek dengan nasi, lalapan, dan sambal, jeruk nipis</p>
+                <span class="price">Rp 25.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="geprek5.jpg" alt="Ayam Geprek Sederahana">
+                <h3>Ayam Geprek Sederahana</h3>
+                <p>Ayam geprek dengan nasi, lalapan, dan sambal</p>
+                <span class="price">Rp 18.000</span>
+            </div>
+            <div class="menu-item">
+                <img src="geprek6.jpg" alt="Ayam Geprek Cabe Hijau">
+                <h3>Ayam Geprek Cabe Hijau</h3>
+                <p>Ayam geprek dengan nasi, lalapan, cabe hijau, jeruk nipis</p>
+                <span class="price">Rp 23.000</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <h2>Pesan Sekarang</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="menu">Pilih Menu:</label>
+                <select id="menu" name="menu" required>
+                    <option value="">Pilih menu...</option>
+                    <option value="Ayam Geprek Original - Rp 15.000">Ayam Geprek Original - Rp 15.000</option>
+                    <option value="Ayam Geprek Pedas - Rp 17.000">Ayam Geprek Pedas - Rp 17.000</option>
+                    <option value="Ayam Geprek Komplit - Rp 20.000">Ayam Geprek Komplit - Rp 20.000</option>
+                    <option value="Ayam Geprek Spesial - Rp 25.000">Ayam Geprek Spesial - Rp 25.000</option>
+                    <option value="Ayam Geprek Sederahana - Rp 18.000">Ayam Geprek Sederahana - Rp 18.000</option>
+                    <option value="Ayam Geprek Cabe Hijau - Rp 23.000">Ayam Geprek Cabe Hijau - Rp 23.000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Nama Pemesan:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat Kirim:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payment">Metode Pembayaran:</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Pilih metode pembayaran...</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Ayam Geprek Mang Daffa</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
